@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "367131214013",
+    "project_id": "chat-4aaba",
+    "storage_bucket": "chat-4aaba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367131214013:android:c2a509effda5c8bf61f7d4",
+        "android_client_info": {
+          "package_name": "co.rohityadav.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367131214013-86i03hlohjbvonaiis2udlg1r8n80ir4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdmeEPnySCmMYfveAvQvwJucy-8YY2a14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367131214013-86i03hlohjbvonaiis2udlg1r8n80ir4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
