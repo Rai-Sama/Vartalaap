@@ -72,6 +72,22 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       email: email, password: password);
                   if(newUser != null){
                     Navigator.pushNamed(context, ChatScreen.id);
+                    return showDialog( ////
+                      context: context,
+                      builder: (ctx) => AlertDialog(
+                        title: Text("Welcome to Vartalaap!", style: TextStyle(color: Colors.white),),
+                        content: Text("You have successfully registered!", style: TextStyle(color: Colors.white),),
+                        backgroundColor: Colors.black,
+                        actions: <Widget>[
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.of(ctx).pop();
+                            },
+                            child: Text("okay", style: TextStyle(color: Colors.white),),
+                          ),
+                        ],
+                      ),
+                    );
                   }
                   setState(() {
                     showSpinner = false;
@@ -79,6 +95,22 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 }
                 catch(e) {
                   print(e);
+                  return showDialog(
+                    context: context,
+                    builder: (ctx) => AlertDialog(
+                      title: Text("Already registered!", style: TextStyle(color: Colors.white),),
+                      content: Text("The email you entered is already registered with vartalaap!", style: TextStyle(color: Colors.white),),
+                      backgroundColor: Colors.black,
+                      actions: <Widget>[
+                        FlatButton(
+                          onPressed: () {
+                            Navigator.of(ctx).pop();
+                          },
+                          child: Text("okay", style: TextStyle(color: Colors.white),),
+                        ),
+                      ],
+                    ),
+                  );
                 }
               },),
             ],
