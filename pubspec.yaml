@@ -23,6 +23,7 @@ dependencies:
   http: ^0.12.1
   geolocator: ^5.3.1
   path_provider: ^1.6.28
+  function_tree: ^0.8.12
 
 
 
