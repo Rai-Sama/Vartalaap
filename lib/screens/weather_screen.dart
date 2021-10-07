@@ -29,7 +29,7 @@ class WeatherStorage {
     final file = await _localFile;
 
     // Write the file
-    return file.writeAsString('$Weather');
+   return file.writeAsString('$Weather\n', mode: FileMode.append);  ////
   }
 }
 
