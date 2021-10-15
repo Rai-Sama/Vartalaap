@@ -111,7 +111,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         }
                         if(messageText == "/why"){
                           _firestore.collection('messages').add({
-                            'text':"This app was created as a practical project for Mobile Computing and Communication Lab course",
+                            'text':"This app was created as a practical project for Mobile App Development Lab course",
                             'sender': "test@gmail.com",
                           });
                         }
