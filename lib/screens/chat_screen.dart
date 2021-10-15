@@ -103,6 +103,19 @@ class _ChatScreenState extends State<ChatScreen> {
                             'sender': "test@gmail.com",
                           });
                         }
+                        if(messageText == "/git"){
+                          _firestore.collection('messages').add({
+                            'text':"You can find Vartalaap on github.com/rai-sama/vartalaap",
+                            'sender': "test@gmail.com",
+                          });
+                        }
+                        if(messageText == "/why"){
+                          _firestore.collection('messages').add({
+                            'text':"This app was created as a practical project for Mobile Computing and Communication Lab course",
+                            'sender': "test@gmail.com",
+                          });
+                        }
+                      
                         if(messageText[0] == "!"){
                           var res = messageText.substring(1);
                           _firestore.collection('messages').add({
